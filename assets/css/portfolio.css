@@ -1,0 +1,411 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    
+    width: 100%;
+    background: linear-gradient(to top, #2a3242, #7d8391);
+    
+}
+/* Add this to your CSS 
+body {
+    opacity: 0;
+    transition: opacity 2s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Once the page is loaded, we make the body visible 
+body.loaded {
+    opacity: 1;
+}*/
+.pageWrapper {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    background: linear-gradient(to top, #2a3242, #7d8391);
+}
+.header {
+    background-color: rgba(53, 56, 73, 0.95);
+    height: 3.5em;
+    width: 100%;
+    padding: 0 1.25em;
+    line-height: 3.5em;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    opacity: 1;
+}
+.header h1 {
+    border-bottom: 0;
+    font-size: 0.8em;
+    margin-bottom: 0;
+    opacity: 1; 
+    
+}
+.header h1 a {
+    text-decoration: none;
+    color: white;
+}
+.intro {
+    height: 400px;
+    width: 100%;
+    padding: 3em 3.25em;
+    padding: ;
+    display: flex;
+    background-color: ;
+    margin-top: 30px;
+
+}
+.myself {
+    width: 60%;
+    height: 100%;
+    background-color: ;
+}
+.myself h2 {
+    filter: blur(0);
+    opacity: ;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+    font-size: 5.25em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.4em;
+    color: white;
+    background: linear-gradient(to right, #4c5b96, #2a3242);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    opacity: 0;
+    animation: typing 3s steps(30) 1s forwards, fadeIn 0.5s forwards;
+}
+@keyframes typing {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.myself p {
+    color: whitesmoke;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+    transform: translateX(0);
+    transition-delay: 0.8s; 
+    filter: blur(0);
+    opacity: 1;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 3em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    text-transform: uppercase;
+    margin-top: -50px;
+}
+.myself i {
+    font-size: 50px;
+    color:  white;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.myself a {
+    text-decoration: none;
+    color: inherit;
+}
+.picture {
+    width: 40%;
+    height: 100%;
+    background-color:;
+}
+.picture img {
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    
+}
+.projects {
+    padding:  3.25em;
+    height: 1700px;
+    width: 100%;
+    background-color: ;
+    gap: 20;
+}
+.projects h2 {
+    filter: blur(0);
+    opacity: 1;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+    font-size: 2.25em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.4em;
+    color: white;
+}
+.projects p {
+    color: #0f0f0f;
+    opacity: 1;
+    font-family: , Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 1; 
+}
+.tech {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.box {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4c5b96;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.box:hover {
+    transform:n scale(1.1)
+}
+.projectCtn {
+    height: 350px;
+    background-color:  #7d8391;
+    box-shaow: #7d8391;
+    border-radius: 20px ;
+    border: none;
+    opacity: 
+
+}
+.projectCtn .inner {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    align-ites: center;
+    gap: 20px;
+}
+.projectCtn .image {
+    width: 35%;
+    height: 300px;
+    background-color: ;
+    margin-right: 50px;
+}
+.content {
+    width: 50%;
+    background-color: ;
+}
+.inner img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+#two, #three, #four {
+    margin-top: 30px;
+}
+.bio {
+    padding: 3.25em;
+    height: 100%;
+    width: 100%;
+
+}
+.bio h2 {
+    filter: blur(0);
+    opacity: 1;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+    font-size: 2.25em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.4em;
+    color: white;
+     animation: typing 3s steps(30) 1s forwards, fadeIn 0.5s forwards;
+}
+.bio p {
+    color: whitesmoke;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+    transform: translateX(0);
+    transition-delay: 0.8s; 
+    filter: blur(0);
+    opacity: 1;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px
+}
+.bioctn {
+    background-color: ;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+.aboutme {
+    width: 70%;
+    background-color: ;
+}
+.skills {
+    width: 30%;
+    background-color: ;
+}
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: ;
+    padding: 3.5em;
+    display: flex;
+    justify-content: center;
+}
+.footer p {
+    color: whitesmoke;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+    transform: translateX(0);
+    transition-delay: 0.8s; 
+    filter: blur(0);
+    opacity: 1;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 1060px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .myself h2 {
+        font-size: 2.25em;
+    }
+    .myself p {
+        font-size: 1em;
+        margin-top: 0;
+    }
+    .picture {
+        margin-top: -100px;
+    }
+    .projects{
+        margin-top: 300px;
+    }
+    .projectCtn {
+        height: 600px;
+    }
+    .projectCtn .inner {
+        display: flex;
+        flex-direction: column; 
+    }
+    .projectCtn .image {
+        width: 100%;
+        height: 300px;
+        background-color: ;
+        margin-right: 50px;
+    }
+    .content {
+        width: 100%;
+        background-color: ;
+    }
+    .bio {
+        margin-top: 1000px;
+    }
+    .myself {
+        margin-bottom: 200px;
+    }
+
+    
+}
+@media screen and (max-width: 768px) {
+    .projectCtn {
+        height: 700px;
+        width: 110%;
+    }
+    .bio {
+        margin-top: 1350px;
+    }
+    .projects{
+        margin-top: 400px;
+    }
+    .picture {
+        width:300px;
+    }
+}
+/*.header {
+    background-color: rgba(53, 56, 73, 0.95);
+    height: 3.5em;
+    left: 0;
+    line-height: 3.5em;
+    padding: 0 1.25em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.header h1 {
+    border-bottom: 0;
+    font-size: 0.8em;
+    margin-bottom: 0;
+    opacity: 1; 
+}
+.header h1 a {
+    border: 0;
+    text-decoration: none;
+    color: white;
+}
+.intro {
+    height: 200px;
+    width: 100%;
+    background-color: red;
+    margin-top: 0px;
+   
+}
+.intro h2 {
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+    transform: translateX(0);
+    transition-delay: 0.65s;
+    filter: blur(0);
+    opacity: 1;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+    font-size: 2.25em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.4em;
+    color: white;
+}
+.intro p {
+    color: whitesmoke;
+    transition: opacity 0.5s ease, transform 0.5s ease, filter 0.25s ease;
+    transform: translateX(0);
+    transition-delay: 0.8s; 
+    filter: blur(0);
+    opacity: 1;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    text-transform: uppercase;
+}
+.intro img {
+    height: 50px;
+    width: 50px;
+    margin-left: 100px;
+}
+/*.projects {
+    width: 100%;
+    height: 2000px;
+    background-color: bue;
+}
