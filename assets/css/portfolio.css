@@ -9,13 +9,13 @@ html, body {
     background: linear-gradient(to top, #2a3242, #7d8391);
     
 }
-/* Add this to your CSS 
+/* 
 body {
     opacity: 0;
     transition: opacity 2s ease-in-out; /* Smooth fade-in effect */
 }
 
-/* Once the page is loaded, we make the body visible 
+/* 
 body.loaded {
     opacity: 1;
 }*/

@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #333333;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.write {
+  padding: 12px 5px;
+}
+.write img {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.login {
+  padding: 10px 15px;
+}
+.login button {
+  height: 30px;
+  width: 60px;
+  background-color: white;
+  border: 1px solid #cfcccc;
+  border-radius: 20px;
+  font-weight: bold;
+  color: black;
+  outline: none;
+  font-size: 13px;
+}
+
+.dropbtn {
+  border: none;
+  text-decoration: none;
+  background-color: transparent;
+  color: #b4b4b4;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+}
+
+.logoresize {
+  height: 90px;
+  width: 150px;
+}
+.centered-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+.shrtcut {
+  display: flex;
+  position: absolute;
+  bottom: 120px;
+  left: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.bar {
+  display: flex;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  width: 95vw;
+  height: 70px;
+  border: 1px solid grey;
+  justify-content: flex-end;
+}
+.shrtcut a {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 5px;
+  justify-content: center;
+}
+.first {
+  font-size: 15px;
+  font-weight: bold;
+}
+.second {
+  font-size: 15px;
+  color: grey;
+}
+#search {
+  position: fixed;
+  bottom: 40px;
+  padding: 10px;
+}
+.message {
+  width: 95vw;
+  height: 60px;
+  border-radius: 15pc;
+  background-color: #2f2f2f;
+  padding: 10px;
+  border: none;
+}
+input {
+  color: white;
+  font-size: 15px;
+}
+input::placeholder {
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 13px;
+  padding-bottom: 10px;
+  color: #b4b4b4;
+}
+#footer a {
+  color: black;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .dropbtn {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: grey;
+  }
+  .shrtcut {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+  }
+  .write {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .suggestions {
+    display: grid;
+    gap: 7px;
+    grid-template-columns: 2fr 2fr;
+  }
+  .suggestions div .bar {
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 30vw;
+  }
+  #search {
+    position: relative;
+    bottom: 0;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  #search .message {
+    width: 60vw;
+    outline: none;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 50px;
+    border: none;
+  }
+  #footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .centered-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+}

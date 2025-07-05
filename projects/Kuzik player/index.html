@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>kuzik player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <musicapp>
+      <div class="header">
+        <button class="icon-button" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <p>Playing from favorites</p>
+        <button class="icon-button" id="favbtn">
+          <i class="fa-regular fa-heart" id="favicon"></i>
+        </button>
+      </div>
+      <div id="sidebar">
+        <div class="top">
+          <button class="icon-button" id="backicon">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <h2>Your Library</h2>
+        </div>
+        <div class="library">
+          <ul id="songlist">
+            <li
+              data-src="music/Burna-Boy-Ft-J-Hus-Cloak-And-Dagger-(TrendyBeatz.com).mp3"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/d/db/Burna_Boy_-_Love%2C_Damini.png"
+                alt="cover"
+              />
+              Burna Boy Ft J-Hus Cloak And Dagger
+            </li>
+            <li data-src="music/RemaOzeba.mp3">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/8/8c/Rema_-_Heis.png"
+                alt=""
+              />
+              Rema Ozeba
+            </li>
+            <li data-src="music/STEEZE-DIBIA-BECKLEY-CHUBBY.mp3">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp4Mi5go_lvucFrdM2D_jZKhhPkDOSzdNaU8UmQQbR5D77zfV6aZbOIQI&s=10"
+                alt=""
+              />
+              STEEZE DIBIA X BECKLEY X CHUBBY
+            </li>
+            <li data-src="music/DISCOVERY-PANDA-TINO-DANNY.mp3">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp4Mi5go_lvucFrdM2D_jZKhhPkDOSzdNaU8UmQQbR5D77zfV6aZbOIQI&s=10"
+                alt=""
+              />
+              DISCOVERY PANDA X TINO BANGZ X DANNY
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <div id="display">
+          <i id="discIcon" class="fa-solid fa-compact-disc icon-button"></i>
+        </div>
+
+        <div class="songdetails">
+          <p>song-title</p>
+          <p>song-name</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div id="progresscontainer">
+          <input type="range" id="progressbar" value="0" min="0" max="100" />
+        </div>
+        <div class="controls">
+          <button id="prevbtn" class="icon-button">
+            <i class="fa-regular fa-backward"></i>
+          </button>
+          <button id="playbtn" class="icon-button">
+            <i id="playicon" class="fa-solid fa-circle-play"></i>
+          </button>
+          <button id="nextbtn" class="icon-button">
+            <i class="fa-solid fa-forward"></i>
+          </button>
+        </div>
+        <div class="volume">
+          <i class="fa-solid fa-volume-low icon-button"></i>
+          <input id="volumectrl" type="range" min="0" max="100" value="5" />
+          <i class="fa-solid fa-volume-high icon-button"></i>
+        </div>
+        <div class="utilities">
+          <button class="icon-button" id="shufflebtn">
+            <i class="fa-solid fa-shuffle"></i>
+          </button>
+          <button class="icon-button" id="repeatbtn">
+            <i class="fa-solid fa-repeat"></i>
+          </button>
+          <button class="icon-button" id="queuebtn">
+            <i class="fa-solid fa-list-ul"></i>
+          </button>
+        </div>
+      </div>
+    </musicapp>
+    <script src="script.js"></script>
+  </body>
+</html>
